@@ -1,4 +1,4 @@
-function maxProfitWithTransactions(prices,k){
+function maxProfitWithKTransactions(prices,k){
            var n=prices.length;
            const array = new Array(2).fill(0).map(() => new Array(k+1).fill(0));
              
@@ -19,4 +19,4 @@ function maxProfitWithTransactions(prices,k){
            return array[1][k];
 }
 
-exports.maxProfitWithKTransactions=maxProfitWithTransactions;
+exports.maxProfitWithKTransactions=maxProfitWithKTransactions;
